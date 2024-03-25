@@ -18,10 +18,14 @@
     <h1>
         Projeto FORMULÁRIOS
 
-       <form action="cadastro.php" autocomplete="on"> <!--Para desligar ou ligar preenchimento automatico--, ACTION, chama o Cadastro PHP -->
+       <form action="cadastro.php" method="post" autocomplete="on"> 
+        
+        <!--Métodos GET para pedir dados nao sensiveis ou muito sigilosos, Método "POST", ajuda a proteger, mais nem tanto-->
+
+        <!--Para desligar ou ligar preenchimento automatico--, ACTION, chama o Cadastro PHP, method POST, "esconde o login e senha, mas nem tanto, aparece no DevTools" -->
 
         <!--Label para a caixa preenchida fica colada ao nome ou sobrenome-->
-        
+
         <p><label for="inome">Nome: </label> 
 
              <input type="text" name="nome" id="inome"></p>
