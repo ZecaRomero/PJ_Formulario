@@ -8,16 +8,26 @@
 <body>
 
     <h1>Teste de Formulário</h1>
-    <form action="cadastro.php" method="post"> <!--POST mais seguro-->
+    <form action="cadastro.php" method="post" autocomplete="on"> <!--POST mais seguro-->
 
     <p>
         <label for="iusu"> Usuário: </label>
-        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15"> <!--Minlenght e Max, minimo e maximo de caracteres obrigatorio para preencher--, required "Quer dizer que é obrigatorio o preenchimento dos campos">
+        <input type="text" name="usu" id="iusu"
+         required minlength="5" maxlength="15"
+         size="11" placeholder="nome do usuário"
+         autocomplete="username"> 
+
+        <!--Minlenght e Max, minimo e maximo de caracteres obrigatorio para preencher--, required "Quer dizer que é obrigatorio o preenchimento dos campos", Placeholder, "local para escrever as coisas"-->
     </p>
 
     <p>
         <label for="isen"> Senha: </label>
-        <input type="password" name="sen" id="isen" minlength="8" maxlength="15", Minlenght e Max, minimo e maximo de caracteres obrigatorio para preencher-->
+        <input type="password" name="sen" id="isen"
+         minlength="6" maxlength="15"
+         size="11" placeholder="digite sua senha"
+         autocapitalize="new-password"
+
+         ><!-- Minlenght e Max, minimo e maximo de caracteres obrigatorio para preencher-->
     </p>
 
     <p>
