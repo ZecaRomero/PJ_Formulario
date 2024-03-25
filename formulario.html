@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIOS </title>
+
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(127, 148, 255);
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>
+        Projeto FORMULÁRIOS
+
+       <form action="cadastro.php" autocomplete="on"> <!--Para desligar ou ligar preenchimento automatico--, ACTION, chama o Cadastro PHP>
+
+        <p><label for="inome">Nome: </label> <!--Para a etiqueta ficar ligada ao campo nome -->
+            
+             <input type="text" name="nome" id="inome"></p>
+
+
+        <p><label for="isobrenome">Sobrenome: </label><!--Para a etiqueta ficar ligada ao campo sobrenome -->
+
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+
+        <p> <input type="submit" value="Enviar"></p> <!--Nome da caixa-->
+        
+
+       </form>
+
+    </h1>
+    
+</body>
+</html>
