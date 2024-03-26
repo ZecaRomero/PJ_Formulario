@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 005</title>
+</head>
+<body>
+
+    <h1>Exempo de Formulário 005</h1>
+
+    <form action="cadastr.php" method="get">
+
+        <fieldset>
+
+            <!--todos os botoes de radio é bom ter o mesmo (name) (( id )) tem que ser diferente para que o label funcione -->
+
+            <legend>Sexo</legend>
+
+            <input type="radio" name="sexo" id="isxmas" value="M"> <label for="isxmas">Masculino</label> <br>
+
+
+            <input type="radio" name="sexo" id="isxfem" value="F"> <label for="isxfem">Feminino</label>  
+            
+
+        </fieldset>
+
+
+        <fieldset>           
+
+
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label><br>
+            <input type="checkbox" name="esfut" id="esfut"> <label for="esfut">Futebol</label><br>
+            <input type="checkbox" name="esvol" id="esvol" checked> <label for="esvol">Volei</label><br>
+            <input type="checkbox" name="esnat" id="esnat"> <label for="esnat">Natacao</label><br>
+            <input type="checkbox" name="esten" id="esten"> <label for="esten">Tenis</label><br>
+            <input type="checkbox" name="escor" id="escor" checked> <label for="escor">Corrida</label><br>
+            <input type="checkbox" name="essalto" id="essalto"> <label for="essalto">Salto</label><br>
+
+            <!--Se colocar checked depois de id="", fica marcado a caixa do box, mas somente para os checkbox, nao funcina para radio-->
+
+            <!--Tem que relacionar o assunto com o checbox com LABEL -->
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+    </form>
+    
+</body>
+</html>
