@@ -11,20 +11,31 @@
 
     <form action="cadastro.php" method="get" autocapitalize="on">
 
-        <p>
-            <label for="iemail">E-mail: </label>
-            <input type="email" name="email" id="iemail" autocomplete="on" required placeholder="Digite seu e-mail">
+        <fieldset> <!--Cria uma caixa-->
 
-        </p>
+            <legend>Digite seus dados abaixo</legend>
 
-        <p>
-            <label for="itel"> Telefone: </label>
-            <input type="tel" name="tel" id="itel" autocomplete="tel"
-            pattern="^\(d{2}\)\d{4,5}-d{4}$"
-             required>
-        </p>
-
-        <!--Estudar mais sobre RegEx-->
+            <p>
+                <label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" placeholder="Digite seu Nome: ">
+            </p>
+            <p>
+                <label for="iemail">E-mail: </label>
+                <input type="email" name="email" id="iemail" autocomplete="on"
+                required
+                placeholder="Digite seu e-mail">
+            </p>
+            <p>
+                <label for="itel"> Telefone: </label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel"
+                pattern="^\(d{2}\)\d{4,5}-d{4}$"
+                required
+                size="26px"
+                placeholder="digite seu telefone (xx) xxxx-xxxx">
+            </p>
+            <!--Estudar mais sobre RegEx - expressoes regulares-->
+           
+        </fieldset>
 
         <p>
             <input type="submit" value="Enviar">
