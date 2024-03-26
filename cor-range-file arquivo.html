@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pr-br
+">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Formulário - COR - RANGE - FILE </h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <p>
+            <label for="icor"> Cor: </label>
+
+            <input type="color" name="" id="icor" value="#2166c0"> 
+
+            <!--Value ( valor ), vai comecar com a cor ou o que for escolhido-->
+
+        </p>
+
+        <p>
+            
+            <label for="inivel">Nivel de Satisfação: </label>
+
+            <input type="range" name="nivel" id="irange" min="2" max="10" value="2">
+
+        </p>
+        
+        <p>  <!--nao pode usar o metodo GET no type FILE (arquivo), tem que usar o metodo POST em form action -->
+            <label for="ifoto"> Foto do perfil: </label>
+            <input type="file" name="foto" id="ifoto">
+            <!--FILE ( arquivo) -->
+
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+
+        </p>
+
+
+    </form>
+    
+</body>
+</html>
